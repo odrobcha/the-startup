@@ -24,6 +24,7 @@ body{
 .container {
     margin-top: 60px;
     justify-content: center;
+    display: grid;
 }
 
 
@@ -50,5 +51,16 @@ box-shadow: 2px 2px 8px #4f6968;
 }
 
 .row {
-    margin: 40px;
+    margin: 50px;
 }
+
+@media only screen and (max-width: 1250px) {
+    
+    .row-2 {
+        .card {
+            img {
+                width: 100%;
+            }
+        }
+    }
+  }
