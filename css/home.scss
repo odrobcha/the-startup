@@ -1,0 +1,93 @@
+#home{
+    margin-top: $height-nav;
+
+
+    #moon{
+        object-fit: cover;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    .content{
+        position: relative;
+        height: calc(100vh - 60px);
+        box-sizing: border-box;
+        color: $color-beige;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 30% 70%;
+
+
+        .title{
+            grid-row: 1/2;
+            grid-column: 1/2;
+            font-family: 'Odibee Sans', cursive;
+            font-size: 160px;
+            padding: 2*$padding-base;
+
+        }
+        @mixin description{
+            grid-row: 2/3;
+            grid-column: 1/2;
+            padding: 40px 40px 40px 40px;
+            margin-left: 5%;
+            align-self: start;
+            justify-self:start;
+            padding: 3*$padding-base;
+            background-color: black;
+            overflow: hidden;
+        }
+
+
+
+        .description{
+            font-size:$font-description;
+            display: grid;
+            grid-template-rows: repeat(4, auto);
+            grid-template-columns: 100%;
+            grid-auto-flow: column;
+            @include description;
+
+
+
+            .slogan{
+                font-size: 40px;
+                text-transform: capitalize;
+                padding: 2*$padding-base 0;
+            }
+            a{
+                color: $color-beige;
+                font-weight: bolder;
+
+            }
+
+            .description-item1, .slogan, .description-item3 {
+                position: relative;
+                top: -320px;
+                animation: 0.7s move-effect ease-in-out;
+                animation-fill-mode: forwards;
+            }
+            .slogan{
+                animation-delay: 0.3s;
+            }
+            .description-item3{
+                animation-delay: 0.8s;
+            }
+            @keyframes move-effect{
+                from {
+                    top: -430px;
+                    opacity: 0;
+                }
+                to{
+                    top: 0%;
+                    opacity: 1;
+                }
+
+            }
+
+        }
+    }
+
+}
