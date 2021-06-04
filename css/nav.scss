@@ -1,0 +1,54 @@
+
+
+
+nav{
+    position:fixed;
+    top:0;
+    left:0;
+    height: $height-nav;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: 100%;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: end;
+    background-color: $color-dark;
+    font-family: 'Odibee Sans', cursive;
+    font-weight: bolder;
+    font-size: 32px;
+    z-index: 10;
+
+    #logo{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    a{
+        padding: $padding-base;
+    }
+    #logo{
+        padding: 0;
+    }
+    a, a:visited, a:focus{
+        text-decoration: none;
+        color: $color-beige;
+    }
+    a:hover{
+        color: $color-green-light;
+    }
+    a.active{                           //aad class .active to <a> to specify active page
+        color: $color-green-light;
+        text-decoration: underline;
+    }
+    @media only screen and (max-width: 600px){
+        font-size: 28px;
+    }
+    @media only screen and (max-width: 400px){
+        font-size: 24px;
+        a{
+            padding: 0.5*$padding-base;
+        }
+    }
+}
