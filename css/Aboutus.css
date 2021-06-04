@@ -1,7 +1,13 @@
+@import url(style.scss);
+body {
+  background-color: #34656d;
+}
+
 .container {
   margin: 60px;
   display: -ms-grid;
   display: grid;
+  background-color: #334443;
 }
 
 .row-3 {
@@ -28,6 +34,5 @@
   -webkit-box-shadow: 2px 2px 8px #4f6968;
           box-shadow: 2px 2px 8px #4f6968;
   position: static;
-  margin: 30px;
 }
 /*# sourceMappingURL=Aboutus.css.map */
