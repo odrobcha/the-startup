@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap");
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 60px;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: 100%;
+  grid-auto-flow: column;
+  align-items: center;
+  justify-content: end;
+  background-color: #334443;
+  font-family: "Odibee Sans", cursive;
+  font-weight: bolder;
+  font-size: 32px;
+  z-index: 10;
+}
+nav #logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+nav a {
+  padding: 20px;
+}
+nav #logo {
+  padding: 0;
+}
+nav a, nav a:visited, nav a:focus {
+  text-decoration: none;
+  color: #fffbdf;
+}
+nav a:hover {
+  color: #c6ffc1;
+}
+nav a.active {
+  color: #c6ffc1;
+  text-decoration: underline;
+}
+@media only screen and (max-width: 600px) {
+  nav {
+    font-size: 28px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  nav {
+    font-size: 24px;
+  }
+  nav a {
+    padding: 10px;
+  }
+}
+
+#home {
+  margin-top: 60px;
+}
+#home #moon {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+#home .content {
+  position: relative;
+  height: calc(100vh - 60px);
+  box-sizing: border-box;
+  color: #fffbdf;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 30% 70%;
+}
+#home .content .title {
+  grid-row: 1/2;
+  grid-column: 1/2;
+  font-family: "Odibee Sans", cursive;
+  font-size: 160px;
+  padding: 40px;
+}
+#home .content .description {
+  font-size: 26px;
+  display: grid;
+  grid-template-rows: repeat(4, auto);
+  grid-template-columns: 100%;
+  grid-auto-flow: column;
+  grid-row: 2/3;
+  grid-column: 1/2;
+  padding: 40px 40px 40px 40px;
+  margin-left: 5%;
+  align-self: start;
+  justify-self: start;
+  padding: 60px;
+  background-color: black;
+  overflow: hidden;
+}
+#home .content .description .slogan {
+  font-size: 40px;
+  text-transform: capitalize;
+  padding: 40px 0;
+}
+#home .content .description a {
+  color: #fffbdf;
+  font-weight: bolder;
+}
+#home .content .description .description-item1, #home .content .description .slogan, #home .content .description .description-item3 {
+  position: relative;
+  top: -320px;
+  animation: 0.7s move-effect ease-in-out;
+  animation-fill-mode: forwards;
+}
+#home .content .description .slogan {
+  animation-delay: 0.3s;
+}
+#home .content .description .description-item3 {
+  animation-delay: 0.8s;
+}
+@keyframes move-effect {
+  from {
+    top: -430px;
+    opacity: 0;
+  }
+  to {
+    top: 0%;
+    opacity: 1;
+  }
+}
+
+body {
+  background-color: #334443;
+}
+
+.servicestitle {
+  color: #c6ffc1;
+  font-size: 50px;
+  font-family: "Odibee Sans", cursive;
+}
+
+h1, h2, h3, h4, h5, h6, p, a {
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/*# sourceMappingURL=style.css.map */

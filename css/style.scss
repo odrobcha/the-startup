@@ -1,0 +1,13 @@
+@import "var";
+@import "nav";
+@import "home";
+@import "Aboutus";
+@import "Services";
+
+@import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap'); //fancy Font
+
+//CSS rules to specify families:   font-family: 'Odibee Sans', cursive;
+
+h1, h2, h3, h4, h5, h6, p, a{
+    text-shadow: 0 1px 2px hsla(0, 0%, 0%, 0.2) //add text-shadow to all text element to make it smopth and easy to read
+}
