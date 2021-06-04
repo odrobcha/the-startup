@@ -6,12 +6,13 @@ body{
 .servicestitle{
     color: #fffbdf;
     font-size: 50px;
-    font-family: 'Odibee Sans', cursive;
+    font-family: 'Dhurjati', sans-serif;
     margin-left: 60px;
     margin-top: 100px;
 }
 
 .servicesdescriptionsection{
+    font-family: 'Roboto Condensed', sans-serif;
     display: flex;
     flex-flow: column-wrap; 
     margin-left: 60px;
@@ -57,4 +58,11 @@ body{
 .servicesbutton:hover {
     background-color: #c6ffc154;
     color: #fffbdf ;
+  }
+
+  @media only screen and (max-width: 768px) {
+      .servicesdescriptionsection {
+        display: flex;
+        flex-flow: column;
+      }
   }
