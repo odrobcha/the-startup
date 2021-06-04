@@ -1,3 +1,4 @@
+
 body{
     background-color: #334443;
 }
@@ -40,6 +41,7 @@ body{
 .servicesbuttoncontainer {
     display: flex;
     justify-content: center;
+    padding-bottom: 50px;
 }
 
 .servicesbutton {
@@ -51,3 +53,8 @@ body{
     margin-top: 3em;
     text-decoration: none;
 }
+
+.servicesbutton:hover {
+    background-color: #c6ffc154;
+    color: #fffbdf ;
+  }
