@@ -261,12 +261,20 @@ body {
 }
 
 .servicescardtitle {
+  padding-top: 20px;
   color: #c6ffc1;
 }
 
 .servicescardimg {
   height: 20vh;
   border-radius: 50%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.servicestext {
+  padding-bottom: 50px;
+  padding-top: 20px;
 }
 
 .servicesbuttoncontainer {
