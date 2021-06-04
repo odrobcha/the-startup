@@ -14,10 +14,12 @@ nav{
     align-items: center;
     justify-content: end;
     background-color: $color-dark;
-    font-family: 'Odibee Sans', cursive;
     font-weight: bolder;
     font-size: 32px;
     z-index: 10;
+   // font-family: 'Inria Serif', serif;
+    font-family: 'Dhurjati', sans-serif;
+    //font-family: 'Titan One', cursive;
 
     #logo{
         position: absolute;
