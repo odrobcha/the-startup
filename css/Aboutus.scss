@@ -1,7 +1,3 @@
-@import url(style.scss);
-
-
-
 $color-dark: #334443;
 $color-green: #34656d;
 $color-green-light: #c6ffc1;
@@ -16,48 +12,43 @@ $color-green-light: #c6ffc1;
 $color-beige: #fffbdf;
 $font-description: 26px;
 
+*{
+    margin: 0 auto;
+    padding: 0;
+}
 
 body{
-    background-color: $color-green;
+    background-color: #334443;
+    margin: auto
 }
-
 .container {
-
-    margin: 60px;
-    display: grid;
-    background-color: $color-dark;
-
-
-
-}
-.row-3{
-    display: flex;
-    
-
+    margin-top: 60px;
+    justify-content: center;
 }
 
-.col-12 {
 
-    img {
-        width: 100%;
-        height: 400px;
-    }
-}
-
-.col-4 {
-    img {
-        width: 250px;
-        height: 250px;
-    }
-}
- 
-.card {
+.card{
     padding: 20px;
-    color: #fffbdf;
-    background-image: linear-gradient(#34656d, #5ab7c5ad);
-    box-shadow: 2px 2px 8px #4f6968;
-    position: static;
-    
+color: #fffbdf;
+background-image: linear-gradient(#34656d, #5ab7c5ad);
+box-shadow: 2px 2px 8px #4f6968;
 
 }
 
+.row-2 {
+    img {
+        height: 200px;
+        width: 300px;
+    }   
+}
+
+.row-1 {
+    img {
+            width: 100%;
+            height: 400px;
+    }
+}
+
+.row {
+    margin: 40px;
+}

@@ -1,38 +1,14 @@
-@import url(style.scss);
 body {
-  background-color: #34656d;
+  background-color: #334443;
 }
 
 .container {
   margin: 60px;
-  display: -ms-grid;
-  display: grid;
-  background-color: #334443;
 }
 
 .row-3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.col-12 img {
-  width: 100%;
-  height: 400px;
-}
-
-.col-4 img {
-  width: 250px;
-  height: 250px;
-}
-
-.card {
-  padding: 20px;
-  color: #fffbdf;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#34656d), to(#5ab7c5ad));
-  background-image: linear-gradient(#34656d, #5ab7c5ad);
-  -webkit-box-shadow: 2px 2px 8px #4f6968;
-          box-shadow: 2px 2px 8px #4f6968;
-  position: static;
 }
 /*# sourceMappingURL=Aboutus.css.map */
