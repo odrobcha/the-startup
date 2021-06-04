@@ -1,0 +1,12 @@
+Index: Services.css.map
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Services.css.map b/Services.css.map
+new file mode 100644
+--- /dev/null	
++++ b/Services.css.map	
+@@ -0,0 +1,1 @@
++{"version":3,"sourceRoot":"","sources":["Services.scss"],"names":[],"mappings":"AAAA;EACI;;;AAGJ;EACI;EACA;EACA","file":"Services.css"}
+\ No newline at end of file
