@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dhurjati&display=swap");
 nav {
   position: fixed;
   top: 0;
@@ -12,10 +13,10 @@ nav {
   align-items: center;
   justify-content: end;
   background-color: #334443;
-  font-family: "Odibee Sans", cursive;
   font-weight: bolder;
   font-size: 32px;
   z-index: 10;
+  font-family: "Dhurjati", sans-serif;
 }
 nav #logo {
   position: absolute;
@@ -76,9 +77,10 @@ nav a.active {
 #home .content .title {
   grid-row: 1/2;
   grid-column: 1/2;
-  font-family: "Odibee Sans", cursive;
+  font-family: "Dhurjati", sans-serif;
   font-size: 160px;
-  padding: 40px;
+  align-self: start;
+  padding-left: 80px;
 }
 #home .content .description {
   font-size: 26px;
@@ -107,24 +109,57 @@ nav a.active {
 }
 #home .content .description .description-item1, #home .content .description .slogan, #home .content .description .description-item3 {
   position: relative;
-  top: -320px;
-  animation: 0.7s move-effect ease-in-out;
+  right: -120%;
+  animation: 1s move-effect ease-in-out;
   animation-fill-mode: forwards;
+  max-width: 100%;
 }
 #home .content .description .slogan {
-  animation-delay: 0.3s;
+  animation-delay: 0.5s;
 }
 #home .content .description .description-item3 {
-  animation-delay: 0.8s;
+  animation-delay: 1s;
 }
 @keyframes move-effect {
-  from {
-    top: -430px;
+  0% {
+    right: -120%;
     opacity: 0;
   }
-  to {
-    top: 0%;
+  100% {
+    right: 0%;
     opacity: 1;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 950px) {
+  #home .content {
+    font-size: 26px;
+  }
+  #home .content .title {
+    font-size: 130px;
+  }
+  #home .content .description {
+    padding: 40px;
+  }
+  #home .content .description h3 {
+    font-size: 24px;
+  }
+  #home .content .description .slogan {
+    font-size: 36px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 599px) {
+  #home .content .title {
+    font-size: 90px;
+    padding: 0;
+  }
+  #home .content .description {
+    padding: 20px;
+  }
+  #home .content .description h3 {
+    font-size: 20px;
+  }
+  #home .content .description .slogan {
+    font-size: 30px;
   }
 }
 
@@ -138,8 +173,61 @@ body {
   font-family: "Odibee Sans", cursive;
 }
 
+footer {
+  height: 100px;
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: 50% 50%;
+  grid-auto-flow: column;
+  align-items: center;
+  color: #fffbdf;
+  border-top: 1px solid #c6ffc1;
+}
+footer a {
+  color: #c6ffc1;
+  text-decoration: none;
+  font-weight: bolder;
+}
+footer .gratitude {
+  padding-left: 20px;
+}
+footer .icons {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: 100%;
+  grid-auto-flow: column;
+  justify-content: end;
+}
+footer .icons img {
+  width: 40px;
+  margin-right: 20px;
+}
+footer .icons img:hover {
+  width: 42px;
+}
+@media only screen and (max-width: 400px) {
+  footer .icons img {
+    width: 30px;
+  }
+  footer .icons img:hover {
+    width: 32px;
+  }
+}
+footer .icon {
+  border: 1px solid red;
+}
+
 h1, h2, h3, h4, h5, h6, p, a {
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 /*# sourceMappingURL=style.css.map */

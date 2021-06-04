@@ -1,0 +1,50 @@
+footer{
+    height: $height-footer;
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 50% 50%;
+    grid-auto-flow: column;
+    align-items: center;
+    color: $color-beige;
+    border-top: 1px solid $color-green-light;
+    a {
+        color: $color-green-light;
+        text-decoration: none;
+        font-weight: bolder;
+    }
+    .gratitude{
+        padding-left: $padding-base;
+    }
+    .icons{
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: 100%;
+        grid-auto-flow: column;
+        justify-content: end;
+        img{
+            width: 40px;
+            margin-right: $padding-base;
+        }
+        img:hover{
+            width: 42px;
+        }
+        @media only screen and (max-width: 400px){
+            img{
+                width: 30px;
+            }
+            img:hover{
+                width: 32px;
+            }
+        }
+
+    }
+    .icon{
+        border: 1px solid red;
+    }
+
+}
