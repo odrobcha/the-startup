@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap");
+h1, h2, h3, h4, h5, h6, p, a {
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 60px;
+  width: 100vw;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[3];
+      grid-template-columns: repeat(3, auto);
+  -ms-grid-rows: 100%;
+      grid-template-rows: 100%;
+  grid-auto-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  background-color: #334443;
+  font-family: 'Odibee Sans', cursive;
+  font-weight: bolder;
+  font-size: 32px;
+}
+
+nav #logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+nav a {
+  padding: 20px;
+}
+
+nav #logo {
+  padding: 0;
+}
+
+nav a, nav a:visited, nav a:focus {
+  text-decoration: none;
+  color: #fffbdf;
+}
+
+nav a:hover {
+  color: #c6ffc1;
+}
+
+nav a.active {
+  color: #c6ffc1;
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) {
+  nav {
+    font-size: 28px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  nav {
+    font-size: 24px;
+  }
+  nav a {
+    padding: 10px;
+  }
+}
+
+#home {
+  margin-top: 60px;
+}
+/*# sourceMappingURL=style.css.map */

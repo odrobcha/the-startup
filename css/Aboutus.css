@@ -1,0 +1,14 @@
+body {
+  background-color: #334443;
+}
+
+.container {
+  margin: 60px;
+}
+
+.row-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/*# sourceMappingURL=Aboutus.css.map */

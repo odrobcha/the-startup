@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAeA,AAAA,IAAI,CAAA;EACA,gBAAgB,EAAE,OAAO;CAC5B;;AACD,AAAA,UAAU,CAAC;EAEP,MAAM,EAAE,IAAI;CAGf;;AACD,AAAA,MAAM,CAAA;EACF,OAAO,EAAE,IAAI;CAGhB",
+    "sources": [
+        "Aboutus.scss"
+    ],
+    "names": [],
+    "file": "Aboutus.css"
+}
