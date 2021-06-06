@@ -254,6 +254,7 @@ body {
 .servicesbutton:hover {
   background-color: #c6ffc154;
   color: #fffbdf;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 768px) {
@@ -311,6 +312,93 @@ footer .icon {
   border: 1px solid red;
 }
 
+body {
+  background-color: #334443;
+}
+
+.bookingform {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #fffbdf;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  margin: 20px;
+  padding: 20px;
+  background-image: linear-gradient(#34656d, #5ab7c5ad);
+  box-shadow: 2px 2px 8px #4f6968;
+  margin-top: 60px;
+}
+
+.fa {
+  color: #c6ffc1;
+  padding-right: 7px;
+}
+
+.btn {
+  background-color: #c6ffc1;
+  color: #334443;
+  border-radius: 50px;
+  font-size: 15px;
+  padding: 6px 10px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #334443;
+  color: #fffbdf;
+}
+
+.iconcontainer {
+  display: flex;
+}
+
+.cardslogo {
+  height: 25px;
+  padding: 7px;
+  border-radius: 15px;
+}
+
+.bookingcolumn > * {
+  margin-top: 2em;
+}
+
+#bookingcolumn2 {
+  margin-top: 2em;
+}
+
+.bookingtext {
+  color: #c6ffc1;
+  font-size: 50px;
+  font-family: "Dhurjati", sans-serif;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.bookinggrid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto;
+  column-gap: 7px;
+  row-gap: 20px;
+}
+
+.doublecolumn {
+  grid-column-start: span 2;
+}
+
+@media only screen and (max-width: 768px) {
+  .bookingform {
+    display: flex;
+    flex-flow: column;
+  }
+
+  .bookingcolumn {
+    width: 80%;
+  }
+}
 h1, h2, h3, h4, h5, h6, p, a {
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
