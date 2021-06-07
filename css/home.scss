@@ -52,7 +52,9 @@
             align-self: start;
             justify-self:start;
             padding: 3*$padding-base;
-            background-color: black;
+            background-image: linear-gradient(to left, rgba(0,0,0,0.3), rgb(0,0,0));
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+
             overflow: hidden;
         }
         @keyframes fade-in {
