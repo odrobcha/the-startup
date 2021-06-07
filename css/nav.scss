@@ -18,7 +18,7 @@ nav{
     font-size: 32px;
     z-index: 10;
     font-family: 'Dhurjati', sans-serif;
-    border-bottom: 1px solid $color-green-light;
+    border-bottom: 1px solid $color-beige;
 
     #logo{
         position: absolute;
@@ -57,5 +57,27 @@ nav{
         a{
             padding: 0.5*$padding-base;
         }
+    }
+
+}
+
+nav.home-nav-animation{
+    position: relative;
+    top: -$height-nav;
+    opacity: 0;
+    animation: 0.5s home-nav-animation ease-in-out;
+    animation-fill-mode: forwards;
+    max-width: 100%;
+    animation-delay: 2s;
+}
+@keyframes home-nav-animation{
+    0%{
+        top: -$height-nav;
+        opacity: 0;
+
+    }
+    100%{
+        top: 0;
+        opacity: 1;
     }
 }

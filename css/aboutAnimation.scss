@@ -1,0 +1,45 @@
+.servicestitlecontainer, .bookingtitle-outer{
+    position: relative;
+    left: -100%;
+    opacity:0;
+    animation: 0.5s titleAnimation ease-in-out;
+    animation-fill-mode: forwards;
+}
+@keyframes titleAnimation {
+    from{
+        left: -100%;
+        opacity: 0
+    }
+    to{
+        left: 0;
+        opacity: 1;
+    }
+}
+
+.servicescard, .servicesbutton, .bookingform, .bookingtext{
+    opacity:0;
+    animation: 0.8s cardAnimation ease-in-out;
+    animation-fill-mode: forwards;
+}
+.servicesbutton{
+    animation-delay: 1.5s;
+}
+@keyframes cardAnimation {
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+
+}
+.servicescard:first-child,  .bookingform{
+    animation-delay: 0.5s;
+}
+.servicescard:nth-child(2), .bookingtext{
+    animation-delay: 0.8s;
+}
+
+.servicescard:nth-child(3){
+    animation-delay: 1.1s;
+}

@@ -17,7 +17,7 @@ nav {
   font-size: 32px;
   z-index: 10;
   font-family: "Dhurjati", sans-serif;
-  border-bottom: 1px solid #c6ffc1;
+  border-bottom: 1px solid #fffbdf;
 }
 nav #logo {
   position: absolute;
@@ -59,6 +59,26 @@ nav a.active {
   }
 }
 
+nav.home-nav-animation {
+  position: relative;
+  top: -60px;
+  opacity: 0;
+  animation: 0.5s home-nav-animation ease-in-out;
+  animation-fill-mode: forwards;
+  max-width: 100%;
+  animation-delay: 2s;
+}
+
+@keyframes home-nav-animation {
+  0% {
+    top: -60px;
+    opacity: 0;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}
 #home {
   margin-top: 60px;
 }
@@ -86,6 +106,18 @@ nav a.active {
   font-size: 160px;
   align-self: start;
   padding-left: 80px;
+  opacity: 0;
+  animation: 0.5s home-title-animation ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 1.8s;
+}
+@keyframes home-title-animation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 @keyframes fade-in {
   0% {
@@ -396,16 +428,21 @@ footer {
   grid-template-columns: 50% 50%;
   grid-auto-flow: column;
   align-items: center;
+  justify-items: end;
   color: #fffbdf;
-  border-top: 1px solid #c6ffc1;
+  border-top: 1px solid #fffbdf;
+  width: 100%;
+  max-width: 100vw;
 }
-footer a {
+footer a, footer a:visited, footer a:hover {
   color: #c6ffc1;
   text-decoration: none;
   font-weight: bolder;
 }
 footer .gratitude {
   padding-left: 20px;
+  justify-self: start;
+  width: 100%;
 }
 footer .icons {
   display: grid;
@@ -413,6 +450,7 @@ footer .icons {
   grid-template-rows: 100%;
   grid-auto-flow: column;
   justify-content: end;
+  width: 100%;
 }
 footer .icons img {
   width: 40px;
@@ -435,6 +473,21 @@ footer .icon {
 
 body {
   background-color: #334443;
+}
+
+.bookingtitle-outer {
+  margin-top: 60px;
+  background-color: #c6ffc1;
+  margin-left: 0;
+  width: 400px;
+}
+
+.bookingtitle {
+  color: #334443;
+  font-size: 50px;
+  font-family: "Dhurjati", sans-serif;
+  margin-left: 60px;
+  margin-top: 100px;
 }
 
 .bookingform {
@@ -463,6 +516,7 @@ body {
   padding: 6px 10px;
   text-decoration: none;
   cursor: pointer;
+  border: none;
 }
 
 .btn:hover {
@@ -520,6 +574,54 @@ body {
     width: 80%;
   }
 }
+.servicestitlecontainer, .bookingtitle-outer {
+  position: relative;
+  left: -100%;
+  opacity: 0;
+  animation: 0.5s titleAnimation ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes titleAnimation {
+  from {
+    left: -100%;
+    opacity: 0;
+  }
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+.servicescard, .servicesbutton, .bookingform, .bookingtext {
+  opacity: 0;
+  animation: 0.8s cardAnimation ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.servicesbutton {
+  animation-delay: 1.5s;
+}
+
+@keyframes cardAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.servicescard:first-child, .bookingform {
+  animation-delay: 0.5s;
+}
+
+.servicescard:nth-child(2), .bookingtext {
+  animation-delay: 0.8s;
+}
+
+.servicescard:nth-child(3) {
+  animation-delay: 1.1s;
+}
+
 h1, h2, h3, h4, h5, h6, p, a {
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }

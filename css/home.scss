@@ -29,7 +29,20 @@
             font-size: 160px;
             align-self: start;
             padding-left: 4*$padding-base;
+            opacity: 0;
+            animation: 0.5s home-title-animation ease-in-out;
+            animation-fill-mode: forwards;
+            animation-delay: 1.8s;
 
+        }
+
+        @keyframes home-title-animation{
+            0%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 1;
+            }
         }
         @mixin description{
             grid-row: 2/3;

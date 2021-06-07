@@ -19,20 +19,21 @@
             <img src="img/logo.png">
         </a>
 
-        <a href="index.html" class="active">Home</a>
+        <a href="index.html">Home</a>
         <a href="Aboutus.html">AboutUs</a>
-        <a href="services.html">Services</a>
+        <a href="Services.html">Services</a>
     </nav>
 
-
+<div class="bookingtitle-outer">
     <h1 class="bookingtitle"> Book a Trip </h1>
-    <form class="bookingform">
+</div>
+    <form action="https://formspree.io/f/mleabyjj" method="POST" class="bookingform">
         <div class="bookingcolumn">
             <div class="bookinggrid">
                 <label for="name"> <i class="fa fa-user"></i> Name*:</label>
                 <input type="text" id="name" name="name" placeholder="Enter your full name" required>
                 <label for="email"> <i class="fa fa-envelope-square"></i>Email address*:</label>
-                <input type="email" id="email" name="email" placeholder="janedoe@gmail.com" required>
+                <input type="email" id="email" name="email" placeholder="youremail@gmail.com" required>
                 <label for="birthday"> <i class="fa fa-birthday-cake"></i>Date of birth:</label>
                 <input type="date" id="birthday" name="birthday">
                 <label for="adr"> <i class="address fa fa-home"></i> Address*: </label>
@@ -43,7 +44,7 @@
                 <input type="text" id="country" name="country" placeholder="Belgium" required>
                 <label> <i class="fa fa-list-ol"> </i> Pick a service/services*:</label>
                 <div class="doublecolumn">
-                    <input type="checkbox" id="service1 " name="service1" value="1">
+                    <input type="checkbox" id="service1" name="service1" value="1">
                     <label for="service1"> Rover ride </label>
                 </div>
                 <div class="doublecolumn">
