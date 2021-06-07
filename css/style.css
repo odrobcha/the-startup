@@ -178,16 +178,47 @@ nav a.active {
   }
 }
 
-
-body {
+.container {
   background-color: #334443;
-  margin: auto;
+}
+.container .row-1 img {
+  margin-top: 60px;
 }
 
-.container {
+.card-group {
+  font-family: "Roboto Condensed", sans-serif;
+  display: flex;
+  margin-left: 60px;
+  margin-right: 60px;
   margin-top: 60px;
-  justify-content: center;
-  display: grid;
+}
+
+.aboutus-title {
+  background-color: #c6ffc1;
+  margin-left: 0;
+  width: 350px;
+  margin-top: 60px;
+}
+.aboutus-title h1 {
+  color: #334443;
+  font-size: 50px;
+  font-family: "Dhurjati", sans-serif;
+  margin-left: 60px;
+  font-weight: bolder;
+}
+
+.leaders-title {
+  background-color: #c6ffc1;
+  margin-left: 0;
+  width: 350px;
+  margin-top: 60px;
+}
+.leaders-title h2 {
+  color: #334443;
+  font-size: 50px;
+  font-family: "Dhurjati", sans-serif;
+  margin-left: 60px;
+  font-weight: bolder;
 }
 
 .card {
@@ -195,25 +226,78 @@ body {
   color: #fffbdf;
   background-image: linear-gradient(#34656d, #5ab7c5ad);
   box-shadow: 2px 2px 8px #4f6968;
-}
-
-.row-2 img {
-  height: 200px;
-  width: 300px;
+  width: 33%;
 }
 
 .row-1 img {
   width: 100%;
-  height: 400px;
+  height: 500px;
 }
 
-.row {
-  margin: 50px;
+.row-2 .card {
+  font-family: "Roboto Condensed", sans-serif;
+  /*  display: -webkit-box;
+   display: -ms-flexbox; */
+  margin: 20px;
+  padding: 20px;
+  color: #fffbdf;
+  /*  display: -webkit-box;
+   display: -ms-flexbox; */
+  display: flex;
+  /*  -webkit-box-orient: vertical;
+   -webkit-box-direction: normal;
+       -ms-flex-flow: column;
+           flex-flow: column;
+   -webkit-box-align: center;
+       -ms-flex-align: center;
+           align-items: center;
+   background-image: -webkit-gradient(linear, left top, left bottom, from(#34656d), to(#5ab7c5ad));
+   background-image: linear-gradient(#34656d, #5ab7c5ad); */
+  -webkit-box-shadow: 2px 2px 8px #4f6968;
+  box-shadow: 2px 2px 8px #4f6968;
+  width: 30%;
+}
+.row-2 .card img {
+  height: 20vh;
+  border-radius: 50%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.row-2 .card h2 {
+  padding-top: 20px;
+  color: #c6ffc1;
+}
+.row-2 .card p {
+  padding-bottom: 50px;
+  padding-top: 20px;
+}
+.row-2 .card button {
+  position: absolute;
+  bottom: 20px;
+  text-decoration: none;
 }
 
-@media only screen and (max-width: 1250px) {
-  .row-2 .card img {
+.row-3 .card {
+  margin: 20px;
+  padding: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .row-1 img {
     width: 100%;
+  }
+
+  .row-2 .card-group, .row-3 .card-group {
+    display: flex;
+    flex-direction: column;
+  }
+  .row-2 .card-group .card, .row-3 .card-group .card {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .row-3 {
+    display: flex;
   }
 }
 body {
