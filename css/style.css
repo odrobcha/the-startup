@@ -17,7 +17,7 @@ nav {
   font-size: 32px;
   z-index: 10;
   font-family: "Dhurjati", sans-serif;
-  border-bottom: 1px solid #c6ffc1;
+  border-bottom: 1px solid #fffbdf;
 }
 nav #logo {
   position: absolute;
@@ -178,6 +178,10 @@ nav a.active {
   }
 }
 
+* {
+  margin: 0 auto;
+  padding: 0;
+}
 
 body {
   background-color: #334443;
@@ -312,16 +316,21 @@ footer {
   grid-template-columns: 50% 50%;
   grid-auto-flow: column;
   align-items: center;
+  justify-items: end;
   color: #fffbdf;
-  border-top: 1px solid #c6ffc1;
+  border-top: 1px solid #fffbdf;
+  width: 100%;
+  max-width: 100vw;
 }
-footer a {
+footer a, footer a:visited, footer a:hover {
   color: #c6ffc1;
   text-decoration: none;
   font-weight: bolder;
 }
 footer .gratitude {
   padding-left: 20px;
+  justify-self: start;
+  width: 100%;
 }
 footer .icons {
   display: grid;
@@ -329,6 +338,7 @@ footer .icons {
   grid-template-rows: 100%;
   grid-auto-flow: column;
   justify-content: end;
+  width: 100%;
 }
 footer .icons img {
   width: 40px;
@@ -351,6 +361,21 @@ footer .icon {
 
 body {
   background-color: #334443;
+}
+
+.bookingtitle-outer {
+  margin-top: 60px;
+  background-color: #c6ffc1;
+  margin-left: 0;
+  width: 400px;
+}
+
+.bookingtitle {
+  color: #334443;
+  font-size: 50px;
+  font-family: "Dhurjati", sans-serif;
+  margin-left: 60px;
+  margin-top: 100px;
 }
 
 .bookingform {
@@ -379,6 +404,7 @@ body {
   padding: 6px 10px;
   text-decoration: none;
   cursor: pointer;
+  border: none;
 }
 
 .btn:hover {
