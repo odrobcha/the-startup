@@ -140,8 +140,7 @@ nav.home-nav-animation {
   align-self: start;
   justify-self: start;
   padding: 60px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), black);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.3), black);
   overflow: hidden;
   animation: 1s fade-in ease-in-out;
   animation-fill-mode: forwards;
@@ -593,7 +592,7 @@ body {
     opacity: 1;
   }
 }
-.servicescard, .servicesbutton, .bookingform, .bookingtext {
+.servicescard, .servicesbutton, .bookingtext {
   opacity: 0;
   animation: 1.5s cardAnimation ease-in-out;
   animation-fill-mode: forwards;
@@ -601,6 +600,10 @@ body {
 
 .servicesbutton {
   animation-delay: 1.5s;
+}
+
+.bookingform {
+  animation: 0.8s cardAnimation ease-in-out;
 }
 
 @keyframes cardAnimation {
@@ -611,7 +614,7 @@ body {
     opacity: 1;
   }
 }
-.servicescard:first-child, .bookingform {
+.servicescard:first-child {
   animation-delay: 0.5s;
 }
 
