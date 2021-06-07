@@ -6,15 +6,22 @@ footer{
     grid-template-columns: 50% 50%;
     grid-auto-flow: column;
     align-items: center;
+    justify-items: end;
     color: $color-beige;
-    border-top: 1px solid $color-green-light;
-    a {
+    border-top: 1px solid $color-beige;
+    width: 100%;
+    max-width: 100vw;
+
+    a, a:visited, a:hover {
         color: $color-green-light;
         text-decoration: none;
         font-weight: bolder;
     }
+
     .gratitude{
         padding-left: $padding-base;
+        justify-self: start;
+        width: 100%;
     }
     .icons{
         display: grid;
@@ -22,6 +29,7 @@ footer{
         grid-template-rows: 100%;
         grid-auto-flow: column;
         justify-content: end;
+        width: 100%;
         img{
             width: 40px;
             margin-right: $padding-base;
