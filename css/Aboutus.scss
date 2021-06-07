@@ -14,10 +14,10 @@ $font-description: 26px;
 
 
 
-    
+
 .container {
-    
-    
+
+
     background-color: #334443;
     .row-1 {
         img {
@@ -45,7 +45,7 @@ $font-description: 26px;
             font-family: 'Dhurjati', sans-serif;
             margin-left: 60px;
             font-weight: bolder;
-            
+
     }
 }
 .leaders-title {
@@ -59,7 +59,7 @@ $font-description: 26px;
             font-family: 'Dhurjati', sans-serif;
             margin-left: 60px;
             font-weight: bolder;
-            
+
     }
 }
 
@@ -123,7 +123,7 @@ $font-description: 26px;
                 text-decoration: none;
             }
         }
-    
+
 }
 
 .row-3 {
@@ -153,12 +153,12 @@ $font-description: 26px;
             }
 
         }
-      
+
     }
 }
 @media only screen and (max-width: 1000px) {
     .row-3{
         display: flex;
-        
+
     }
 }
