@@ -39,29 +39,29 @@
 }
 
 .card:first-child {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.card:nth-child(2) {
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+
+.card:nth-child(3) {
   -webkit-animation-delay: 2s;
           animation-delay: 2s;
 }
 
-.card:nth-child(2) {
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
-}
-
-.card:nth-child(3) {
-  -webkit-animation-delay: 4s;
-          animation-delay: 4s;
-}
-
 .card:nth-child(4) {
-  -webkit-animation-delay: 5s;
-          animation-delay: 5s;
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
 }
 
 .card {
   opacity: 0;
-  -webkit-animation: 0.8s cardAnimation ease-in-out;
-          animation: 0.8s cardAnimation ease-in-out;
+  -webkit-animation: 0.8s cardAnimation   ease-in-out;
+          animation: 0.8s cardAnimation   ease-in-out;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -71,8 +71,8 @@
   position: relative;
   left: -100%;
   opacity: 0;
-  -webkit-animation: 0.5s titleAnimation ease-in-out;
-          animation: 0.5s titleAnimation ease-in-out;
+  -webkit-animation: 1s titleAnimation ease-in-out;
+          animation: 1s titleAnimation ease-in-out;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -106,7 +106,7 @@
 .leaders-title {
   background-color: #c6ffc1;
   margin-left: 0;
-  width: 350px;
+  width: 400px;
   margin-top: 60px;
   border-radius: 5px;
 }
@@ -196,5 +196,24 @@
     margin-top: 10px;
     margin-bottom: 10px;
   }
+}
+
+@media only screen and (max-width: 1250) {
+  /* .row-3 {
+        .card-group {
+            display: flex;
+            flex-wrap: wrap;
+            .card {
+                width: 50%;
+                margin: auto;
+                padding: 10px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+    
+            }
+        }
+
+    }
+     */
 }
 /*# sourceMappingURL=Aboutus.css.map */
