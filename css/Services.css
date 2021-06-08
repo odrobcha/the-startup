@@ -1,0 +1,110 @@
+body {
+  background-color: #334443;
+  margin: 0;
+}
+
+.servicestitle {
+  color: #334443;
+  font-size: 50px;
+  font-family: 'Dhurjati', sans-serif;
+  margin-left: 60px;
+  margin-top: 100px;
+}
+
+.servicestitlecontainer {
+  background-color: #c6ffc1;
+  margin-left: 0;
+  width: 400px;
+  border-radius: 5px;
+}
+
+.servicesdescriptionsection {
+  font-family: 'Roboto Condensed', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-top: 60px;
+}
+
+.servicescard {
+  margin: 20px;
+  padding: 20px;
+  color: #fffbdf;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#34656d), to(#5ab7c5ad));
+  background-image: linear-gradient(#34656d, #5ab7c5ad);
+  -webkit-box-shadow: 2px 2px 8px #4f6968;
+          box-shadow: 2px 2px 8px #4f6968;
+  width: 30%;
+  border-radius: 5px;
+}
+
+.servicescardtitle {
+  padding-top: 20px;
+  color: #c6ffc1;
+}
+
+.servicescardimg {
+  height: 20vh;
+  border-radius: 50%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.servicestext {
+  padding-bottom: 50px;
+  padding-top: 20px;
+}
+
+.servicesbuttoncontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 50px;
+}
+
+.servicesbutton {
+  background-color: #c6ffc1;
+  color: #334443;
+  border-radius: 50px;
+  font-size: 30px;
+  padding: 15px 30px;
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+.servicesbutton:hover {
+  background-color: #c6ffc154;
+  color: #fffbdf;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  .servicesdescriptionsection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  .servicescard {
+    width: 80%;
+  }
+}
+/*# sourceMappingURL=Services.css.map */
