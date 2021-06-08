@@ -37,18 +37,21 @@ footer{
         img:hover{
             width: 42px;
         }
-        @media only screen and (max-width: 400px){
+        @media only screen and (max-width: 450px){
+
+
             img{
-                width: 30px;
+                width: 28px;
             }
             img:hover{
-                width: 32px;
+                width: 30px;
             }
         }
 
     }
-    .icon{
-        border: 1px solid red;
+}
+@media only screen and (max-width: 450px){
+    footer{
+        grid-template-columns: 30% 70%;
     }
-
 }
