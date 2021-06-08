@@ -46,7 +46,11 @@ $font-description: 26px;
 .card:nth-child(4){
     animation-delay: 2.5s;
 }
-
+hr{
+    border:none;
+    border-top: 1px solid $color-beige;
+    opacity: 0.5
+}
 .card{
     opacity:0;
     animation: 0.8s cardAnimation   ease-in-out;

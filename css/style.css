@@ -247,6 +247,12 @@ nav.home-nav-animation {
   animation-delay: 2.5s;
 }
 
+hr {
+  border: none;
+  border-top: 1px solid #fffbdf;
+  opacity: 0.5;
+}
+
 .card {
   opacity: 0;
   animation: 0.8s cardAnimation ease-in-out;
