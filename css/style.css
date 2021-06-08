@@ -403,6 +403,7 @@ body {
   background-color: #c6ffc1;
   margin-left: 0;
   width: 400px;
+  border-radius: 5px;
 }
 
 .servicesdescriptionsection {
@@ -423,6 +424,7 @@ body {
   background-image: linear-gradient(#34656d, #5ab7c5ad);
   box-shadow: 2px 2px 8px #4f6968;
   width: 30%;
+  border-radius: 5px;
 }
 
 .servicescardtitle {
@@ -534,6 +536,7 @@ body {
   background-color: #c6ffc1;
   margin-left: 0;
   width: 400px;
+  border-radius: 5px;
 }
 
 .bookingtitle {
@@ -555,6 +558,7 @@ body {
   background-image: linear-gradient(#34656d, #5ab7c5ad);
   box-shadow: 2px 2px 8px #4f6968;
   margin-top: 60px;
+  border-radius: 5px;
 }
 
 .fa {
