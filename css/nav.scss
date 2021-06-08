@@ -72,11 +72,13 @@ nav.home-nav-animation{
 }
 @keyframes home-nav-animation{
     0%{
+        position:relative;
         top: -$height-nav;
         opacity: 0;
 
     }
     100%{
+        position: fixed;
         top: 0;
         opacity: 1;
     }

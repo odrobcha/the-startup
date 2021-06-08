@@ -71,14 +71,21 @@ nav.home-nav-animation {
 
 @keyframes home-nav-animation {
   0% {
+    position: relative;
     top: -60px;
     opacity: 0;
   }
   100% {
+    position: fixed;
     top: 0;
     opacity: 1;
   }
 }
+#home-outer {
+  max-height: 100vw;
+  overflow: hidden;
+}
+
 #home {
   margin-top: 60px;
 }
@@ -633,6 +640,12 @@ body {
 
   .bookingcolumn {
     width: 80%;
+  }
+
+  .bookingtext {
+    width: 60%;
+    font-size: 35px;
+    text-align: center;
   }
 }
 .servicestitlecontainer, .bookingtitle-outer {
