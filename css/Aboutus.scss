@@ -90,8 +90,7 @@ hr{
 .card-title {
     padding-top: 20px;
     color: $color-beige;
-    font-size: 18px;
-    text-align: justify;
+    text-align: center;
 }
 
 .card {
@@ -134,6 +133,9 @@ hr{
     p{
         padding-bottom: 50px;
         padding-top: 20px;
+        color: $color-beige;
+        font-size: 18px;
+        text-align: justify;
     }
 }
 

@@ -12,7 +12,7 @@ nav {
   grid-auto-flow: column;
   align-items: center;
   justify-content: end;
-  background-color: #09161c;
+  background-color: #01040d;
   font-weight: bolder;
   font-size: 32px;
   z-index: 10;
@@ -309,8 +309,7 @@ hr {
 .card-title {
   padding-top: 20px;
   color: #ffffff;
-  font-size: 18px;
-  text-align: justify;
+  text-align: center;
 }
 
 .card {
@@ -349,6 +348,9 @@ hr {
 .card p {
   padding-bottom: 50px;
   padding-top: 20px;
+  color: #ffffff;
+  font-size: 18px;
+  text-align: justify;
 }
 
 .bg-img {
@@ -455,7 +457,7 @@ body {
 
 .servicesbutton {
   background-color: #e6fcff;
-  color: #09161c;
+  color: #01040d;
   border-radius: 50px;
   font-size: 30px;
   padding: 15px 30px;
@@ -465,7 +467,7 @@ body {
 
 .servicesbutton:hover {
   background-color: #5ab7c5ad;
-  color: #09161c;
+  color: #01040d;
   cursor: pointer;
 }
 
@@ -533,7 +535,7 @@ footer .icons img:hover {
   }
 }
 body {
-  background-color: #09161c;
+  background-color: #01040d;
 }
 
 .bookingtitle-outer {
@@ -544,7 +546,7 @@ body {
 }
 
 .bookingtitle {
-  color: #09161c;
+  color: #01040d;
   font-size: 50px;
   font-family: "Dhurjati", sans-serif;
   margin-left: 60px;
@@ -564,13 +566,13 @@ body {
 }
 
 .fa {
-  color: #09161c;
+  color: #01040d;
   padding-right: 7px;
 }
 
 .btn {
   background-color: #e6fcff;
-  color: #09161c;
+  color: #01040d;
   border-radius: 50px;
   font-size: 15px;
   padding: 6px 10px;
