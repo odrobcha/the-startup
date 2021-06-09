@@ -308,8 +308,9 @@ hr {
 
 .card-title {
   padding-top: 20px;
-  color: #c6ffc1;
-  text-align: center;
+  color: #ffffff;
+  font-size: 18px;
+  text-align: justify;
 }
 
 .card {
