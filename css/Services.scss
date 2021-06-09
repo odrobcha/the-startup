@@ -12,10 +12,9 @@ body{
     margin-top: 100px;
 }
 .servicestitlecontainer{
-    background-color: #c6ffc1;
+    background-color: $color-green-light;
     margin-left: 0;
     width: 400px;
-    border-radius: 5px;
 }
 
 .servicesdescriptionsection{
@@ -29,19 +28,19 @@ body{
 .servicescard{
     margin: 20px;
     padding: 20px;
-    color: #fffbdf;
+    color: $color-beige;
     display: flex;
     flex-flow: column;
    align-items: center;
-   background-image: linear-gradient(#34656d, #5ab7c5ad);
-   box-shadow: 2px 2px 8px #4f6968;
+   background-image: linear-gradient($color-card-light, $color-card-dark);
+    font-size: 18px;
+    text-align: justify;
    width: 30%;
-   border-radius: 5px;
 }
 
 .servicescardtitle {
     padding-top: 20px;
-    color: #c6ffc1;
+    color: $color-green-light;
 }
 
 .servicescardimg{
@@ -63,8 +62,8 @@ body{
 }
 
 .servicesbutton {
-    background-color:#c6ffc1;
-    color: #334443;
+    background-color: $color-green-light;
+    color: $color-dark;
     border-radius: 50px;
     font-size: 30px;
     padding: 15px 30px;
@@ -74,8 +73,8 @@ body{
 }
 
 .servicesbutton:hover {
-    background-color: #c6ffc154;
-    color: #fffbdf ;
+    background-color: $color-green;
+    color: $color-dark ;
     cursor:pointer;
   }
 

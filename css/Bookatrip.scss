@@ -1,17 +1,16 @@
 body{
-    background-color: #334443;
+    background-color: $color-dark;
 
 }
 .bookingtitle-outer{
     margin-top: $height-nav;
-    background-color: #c6ffc1;
+    background-color: $color-green-light;
     margin-left: 0;
     width: 400px;
-    border-radius: 5px;
 }
 .bookingtitle{
 
-    color: #334443;
+    color: $color-dark;
     font-size: 50px;
     font-family: "Dhurjati", sans-serif;
     margin-left: 60px;
@@ -19,25 +18,24 @@ body{
 }
 .bookingform{
     font-family:'Roboto Condensed', sans-serif;;
-    color: #fffbdf;
+    color: $color-green-light;
     display: flex;
     flex-flow: row;
     justify-content: space-around;
     margin: 20px;
     padding: 20px;
-   background-image: linear-gradient(#34656d, #5ab7c5ad);
-   box-shadow: 2px 2px 8px #4f6968;
+    background-image: linear-gradient($color-card-light, $color-card-dark);
+
    margin-top: 60px;
-   border-radius: 5px;
 
 }
 .fa{
-    color: #c6ffc1;
+    color: $color-dark;
     padding-right: 7px;
 }
 .btn{
-    background-color:#c6ffc1;
-    color: #334443;
+    background-color:$color-card-light;
+    color: $color-dark;
     border-radius: 50px;
     font-size: 15px;
     padding: 6px 10px;
@@ -46,8 +44,8 @@ body{
     border: none;
 }
 .btn:hover {
-    background-color: #334443;
-    color: #fffbdf ;
+    background-color: $color-green;
+
   }
 .iconcontainer{
     display: flex;
@@ -66,7 +64,7 @@ body{
 }
 
 .bookingtext{
-        color: #c6ffc1;
+        color: $color-beige;
         font-size: 50px;
         font-family: 'Dhurjati', sans-serif;
         margin-top: 60px;

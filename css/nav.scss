@@ -43,10 +43,10 @@ nav{
         color: $color-beige;
     }
     a:hover{
-        color: $color-green-light;
+        color: $color-green;
     }
     a.active{                           //aad class .active to <a> to specify active page
-        color: $color-green-light;
+        color: $color-green;
 
     }
     @media only screen and (max-width: 600px){

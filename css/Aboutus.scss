@@ -1,17 +1,3 @@
-$color-dark: #334443;
-$color-green: #34656d;
-
-$color-green-light: #c6ffc1;
-$color-beige: #fffbdf;
-$height-nav: 60px;
-$height-footer: 100px;
-$padding-base: 20px;
-$color-dark: #334443;
-$color-green: #34656d;
-$color-green-light: #c6ffc1;
-$color-beige: #fffbdf;
-$font-description: 26px;
-
 
 @keyframes titleAnimation {
     from{
@@ -71,11 +57,10 @@ hr{
 }
 
 .aboutus-title {
-    background-color: #c6ffc1;
+    background-color: $color-green-light;
     margin-left: 0;
     width: 350px;
-    margin-top: 60px;
-    border-radius: 5px;
+    margin-top: 100px;
     animation: 0.5s titleAnimation ease-in-out;
     position: relative;
         h1{
@@ -88,11 +73,10 @@ hr{
     }
 }
 .leaders-title {
-    background-color: #c6ffc1;
+    background-color: $color-green-light;
     margin-left: 0;
     width: 400px;
     margin-top: 60px;
-    border-radius: 5px;
         h2{
             color: #334443;
             font-size: 50px;
@@ -126,12 +110,10 @@ hr{
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#34656d), to(#5ab7c5ad));
-    background-image: linear-gradient(#34656d, #5ab7c5ad);
-    -webkit-box-shadow: 2px 2px 8px #4f6968;
-            box-shadow: 2px 2px 8px #4f6968;
+    background-image: -webkit-gradient(linear, left top, left bottom, $color-card-light, $color-card-dark);
+    background-image: linear-gradient($color-card-light, $color-card-dark);
+
     width: 33%;
-    border-radius: 5px;
 
 
 
@@ -146,7 +128,7 @@ hr{
     }
     h2 {
         padding-top: 20px;
-        color: #c6ffc1;
+        color: $color-green-light;
     }
     p{
         padding-bottom: 50px;
