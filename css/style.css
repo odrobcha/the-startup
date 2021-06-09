@@ -12,7 +12,7 @@ nav {
   grid-auto-flow: column;
   align-items: center;
   justify-content: end;
-  background-color: #1f2020;
+  background-color: #09161c;
   font-weight: bolder;
   font-size: 32px;
   z-index: 10;
@@ -454,7 +454,7 @@ body {
 
 .servicesbutton {
   background-color: #e6fcff;
-  color: #1f2020;
+  color: #09161c;
   border-radius: 50px;
   font-size: 30px;
   padding: 15px 30px;
@@ -464,7 +464,7 @@ body {
 
 .servicesbutton:hover {
   background-color: #5ab7c5ad;
-  color: #1f2020;
+  color: #09161c;
   cursor: pointer;
 }
 
@@ -532,7 +532,7 @@ footer .icons img:hover {
   }
 }
 body {
-  background-color: #1f2020;
+  background-color: #09161c;
 }
 
 .bookingtitle-outer {
@@ -543,7 +543,7 @@ body {
 }
 
 .bookingtitle {
-  color: #1f2020;
+  color: #09161c;
   font-size: 50px;
   font-family: "Dhurjati", sans-serif;
   margin-left: 60px;
@@ -563,13 +563,13 @@ body {
 }
 
 .fa {
-  color: #1f2020;
+  color: #09161c;
   padding-right: 7px;
 }
 
 .btn {
   background-color: #e6fcff;
-  color: #1f2020;
+  color: #09161c;
   border-radius: 50px;
   font-size: 15px;
   padding: 6px 10px;
